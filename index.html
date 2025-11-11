@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenido</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="logo">Tienda_TheEverth</div>
+    <div class="links">
+      <a href="index.html">Inicio</a>
+      <a href="shop.html">Shop</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="registro.html">Registro</a>
+      <a href="login.html">Login</a>
+      <button id="btnLogout" class="link-btn">Salir</button>
+    </div>
+  </nav>
+
+  <div class="main-container">
+    <div class="card">
+      <h2>Bienvenido!</h2>
+      <p>Bienvenido a la shop mas dura del bloque.</p>
+
+      <div class="carousel">
+        <div class="carousel-slide" id="slide"></div>
+        <div class="carousel-controls">
+          <button id="prev">&lt;</button>
+          <button id="next">&gt;</button>
+        </div>
+      </div>
+
+      <h3 style="margin-top:16px;">Productos destacados</h3>
+      <div id="landingProducts" class="products-grid"></div>
+      <p id="landingMsg" class="msg"></p>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/landing.js"></script>
+</body>
+</html>

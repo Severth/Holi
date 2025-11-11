@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="logo">Tienda_TheEverth</div>
+    <div class="links">
+      <a href="index.html">Inicio</a>
+      <a href="shop.html">Shop</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="registro.html">Registro</a>
+      <a href="login.html">Login</a>
+      <button id="btnLogout" class="link-btn">Salir</button>
+    </div>
+  </nav>
+
+  <div class="main-container">
+    <div class="card">
+      <h2>Tienda</h2>
+      <p>botón para agregar al carrito.</p>
+
+      <div id="shopProducts" class="products-grid"></div>
+      <p id="shopMsg" class="msg"></p>
+
+      <div class="cart-panel">
+        <h3>Carrito</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cant.</th>
+              <th>Precio</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody id="cartBody"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Total</td>
+              <td id="cartTotal">$0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
